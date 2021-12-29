@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\levelindicator.o"
+--strict --scatter ".\WaterLeveLindicator.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\WaterLeveLindicator.map" -o .\WaterLeveLindicator.axf
